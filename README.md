@@ -1,2 +1,2 @@
 # EgoWild
-Code accompanying Bringing Online Egocentric Action Recognition into the wild (RA-L)
+Code will be released soon!
