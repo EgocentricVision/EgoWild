@@ -187,3 +187,8 @@ If you use this work, please consider citing
   publisher={IEEE}
 }
 ```
+
+# Contact :pushpin:
+If you have any question, do not hesitate to contact me:
+
+- Gabriele Goletto: <code> gabriele.goletto@polito.it</code>
