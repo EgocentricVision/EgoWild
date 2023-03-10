@@ -2,6 +2,9 @@
 Implementation of Bringing Online Egocentric Action Recognition into the wild
  -->
 # Bringing Online Egocentric Action Recognition into the wild
+
+[Preprint](https://arxiv.org/abs/2211.03004) / [Website](https://egocentricvision.github.io/EgoWild/) / [Video](https://www.youtube.com/watch?v=7rtynmoYnuw&t=32s)
+
 ##### Gabriele Goletto*, Mirco Planamente*, Barbara Caputo, Giuseppe Averta.
 
 This repository contains the code for the [paper](https://arxiv.org/abs/2211.03004): "Bringing Online Egocentric Action Recognition into the wild".
