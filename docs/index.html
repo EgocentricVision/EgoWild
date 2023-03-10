@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>
+      
+  <script type="text/javascript"
+          src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="With this paper, we set the boundaries that egocentric vision models should consider for realistic applications, defining a novel setting of egocentric action recognition in the wild, which encourages researchers to develop novel, applications-aware solutions.">
+  <meta property="og:title" content="Bringing Online Egocentric Action Recognition into the wild"/>
+  <meta property="og:description" content="With this paper, we set the boundaries that egocentric vision models should consider for realistic applications, defining a novel setting of egocentric action recognition in the wild, which encourages researchers to develop novel, applications-aware solutions."/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/Banner.png" />
+  <meta property="og:image:width" content="460"/>
+  <meta property="og:image:height" content="460"/>
+
+
+  <meta name="twitter:title" content="Bringing Online Egocentric Action Recognition into the wild">
+  <meta name="twitter:description" content="With this paper, we set the boundaries that egocentric vision models should consider for realistic applications, defining a novel setting of egocentric action recognition in the wild, which encourages researchers to develop novel, applications-aware solutions.">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/Banner.png">
+  <meta name="twitter:card" content="summary">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Egocentric vision; Computer vision; Deep Learning;">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Bringing Online Egocentric Action Recognition into the wild</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Bringing Online Egocentric Action Recognition into the wild</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://ezius07.github.io" target="_blank">Gabriele Goletto</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=GIJ3h4AAAAAJ&hl=en" target="_blank">Mirco Planamente</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=mHbdIAwAAAAJ&hl=en" target="_blank">Barbara Caputo</a>
+                  ,</span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.it/citations?user=i4rm0tYAAAAJ&hl=en" target="_blank">Giuseppe Averta</a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Politecnico di Torino<br>IEEE Robotics and Automation Letters (RA-L)</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="eql-cntrb"><small><br>Contacts: name.surname@polito.it</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://ieeexplore.ieee.org/document/10058047" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/EgocentricVision/EgoWild" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2211.03004" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+              <!-- Supplementary PDF link -->
+              <span class="link-block">
+                <a href="static/pdfs/Rebuttal.pdf" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Rebuttal</span>
+              </a>
+            </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Youtube video -->
+<section class="hero teaser">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <!--<h2 class="title is-3">Video Presentation</h2>-->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <!-- Youtube embed code here -->
+            <iframe src="https://www.youtube.com/embed/7rtynmoYnuw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+          <h2 class="subtitle has-text-centered">
+            Intuition behind the work and qualitative results on EPIC-Kitchens samples.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+<!-- Non YT video
+<section class="hero teaser">
+
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/Goletto_et_al.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Intuition behind the work and qualitative results on EPIC-Kitchens samples.
+      </h2>
+    </div>
+  </div>
+</section>
+-->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            To enable a safe and effective human-robot cooperation, it is crucial to develop models for the identification of human activities. 
+            Egocentric vision seems to be a viable solution to solve this problem, and therefore many works provide deep learning solutions 
+            to infer human actions from first person videos. However, although very promising, most of these do not consider the major challenges that 
+            comes with a realistic deployment, such as the portability of the model, the need for real-time inference, 
+            and the robustness with respect to the novel domains (i.e., new spaces, users, tasks). 
+            With this paper, we set the boundaries that egocentric vision models should consider for realistic applications, 
+            defining a novel setting of egocentric action recognition in the wild, which encourages researchers to develop novel, 
+            applications-aware solutions. We also present a new model-agnostic technique that enables the rapid repurposing of existing 
+            architectures in this new context, demonstrating the feasibility to deploy a model on a tiny device (Jetson Nano) and to 
+            perform the task directly on the edge with very low energy consumption (2.4W on average at 50 fps).
+          </p>
+          <img src="static/images/output-onlinepngtools-2.png" alt="teaser"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small flex">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Results</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/Teaser2.png" alt="research area"/>
+        <h3 class="subtitle has-text-centered is-6">
+          <br><br>
+          Frames per Second (FPS) processed with the I3D model on different devices. The Orange areas show traditional action recognition models' difficulty to run online inference on edge devices, either due to latency or hardware constraints. 
+          Our goal is to promote research toward models that can work in the Green area, allowing egocentric models to run online inference and on tiny devices.
+        </h3>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/EdgeConstraints.png" alt="edgeres"/>
+        <h3 class="subtitle has-text-centered is-6">
+          <br><br>
+          Quantitative analysis of the effects of using action recognition models on different devices.
+        </h3>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+          <img src="static/images/streaming.png" alt="streaming"/>
+        <h3 class="subtitle has-text-centered is-6">
+          <br><br>
+          Illustration of the Streaming inference scenario. $TW_{T_{s}}$ represents a temporal window sliding along the video with stride 1.
+    At each time step, a clip of $T_{s}$ contiguous frames is fed into the network, which comprises a feature extractor $F$ and a classifier $C$ with $n$ classes ($C_{1}$, $C_{2}$, ... ,$C_{n}$). $A$ represents the aggregator that - at each step - updates the output of the network, taking into consideration the current output and the previous ones. R stands for aggregator cleaning, triggered by the sample's last frame.
+        </h3>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/double_buffer.png" alt="double_buffer"/>
+        <h3 class="subtitle has-text-centered is-6">
+          <br><br>
+          Illustration of the proposed two-fold aggregator ($A^{2}$) method. The two aggregators work asyncronsly, $\delta$ is a parameter used to guarantee the asyncroncity of the two and indicates the frame-delay of the DBL activation of one aggregator when the other one detects an anomaly.
+        </h3>
+     </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+      @article{goletto2023bringing,
+        title={Bringing Online Egocentric Action Recognition into the wild},
+        author={Goletto, Gabriele and Planamente, Mirco and Caputo, Barbara and Averta, Giuseppe},
+        journal={IEEE Robotics and Automation Letters},
+        year={2023},
+        publisher={IEEE}
+      }
+    </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>If you have any questions, please contact us at <a href='mailto:gabriele.goletto@polito.it'>gabriele.goletto@polito.it</a></p>
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
