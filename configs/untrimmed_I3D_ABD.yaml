@@ -1,0 +1,10 @@
+validation_function: untrimmed_validation
+boundaries_supervision: False
+ABD: 50
+
+# Hierarchical configuration (paths relative to configs/)
+extends: trimmed_I3D.yaml
+
+test:
+  untrimmed: True
+

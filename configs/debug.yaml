@@ -1,0 +1,8 @@
+action: validate # train or test
+name: test
+
+# Hierarchical configuration (paths relative to configs/)
+extends: default.yaml
+
+dataset:
+  shift: D1-D1
