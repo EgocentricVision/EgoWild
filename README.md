@@ -7,7 +7,7 @@ Implementation of Bringing Online Egocentric Action Recognition into the wild
 
 ##### Gabriele Goletto*, Mirco Planamente*, Barbara Caputo, Giuseppe Averta.
 
-This repository contains the code for the [paper](https://arxiv.org/abs/2211.03004): "Bringing Online Egocentric Action Recognition into the wild".
+This repository contains the code for the [paper](https://ieeexplore.ieee.org/document/10058047): "Bringing Online Egocentric Action Recognition into the wild".
 
 *Abstract:* To enable a safe and effective human-robot cooperation, it is crucial to develop models for the identification of human activities. Egocentric vision seems to be a viable solution to solve this problem, and therefore many works provide deep learning solutions to infer human actions from first person videos. However, although very promising, most of these do not consider the major challenges that comes with a realistic deployment, such as the portability of the model, the need for real-time inference, and the robustness with respect to the novel domains (i.e., new spaces, users, tasks). With this paper, we set the boundaries that egocentric vision models should consider for realistic applications, defining a novel setting of egocentric action recognition in the wild, which encourages researchers to develop novel, applications-aware solutions. We also present a new model-agnostic technique that enables the rapid repurposing of existing architectures in this new context, demonstrating the feasibility to deploy a model on a tiny device (Jetson Nano) and to perform the task directly on the edge with very low energy consumption (2.4W on average at 50 fps).
 
