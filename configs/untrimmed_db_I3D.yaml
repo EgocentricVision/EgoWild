@@ -1,0 +1,8 @@
+validation_function: untrimmed_validation_double_buffer
+boundaries_supervision: True
+
+# Hierarchical configuration (paths relative to configs/)
+extends: trimmed_I3D.yaml
+
+test:
+  untrimmed: True
